@@ -8,7 +8,7 @@ import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import LandingPage from './Pages/LandingPage/LandingPage'
 import Introduction from './Pages/Introduction/Introduction'
 
-import './base.css'
+import './index.scss'
 
 function Loader() {
   const { progress } = useProgress()
