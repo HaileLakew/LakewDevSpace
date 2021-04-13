@@ -1,7 +1,7 @@
 import * as THREE from "three"
 import React, { createContext, useRef, useContext } from "react"
 import { useFrame, useThree } from  'react-three-fiber'
-import state from "./store"
+import state from "../Libraries/store"
 
 const offsetContext = createContext(0)
 

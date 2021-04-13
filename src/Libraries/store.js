@@ -1,8 +1,8 @@
 import { createRef } from "react"
 
 const state = {
-  sections: 3,
-  pages: 3,
+  sections: 6,
+  pages: 5,
   zoom: 75,
   top: createRef()
 }

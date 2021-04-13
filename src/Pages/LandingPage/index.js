@@ -82,9 +82,6 @@ function TitleCopies({ layers }) {
 function Scene() {
   const [cubeCamera, renderTarget] = useRenderTarget()
   const group = useSlerp()
-  // const scrollArea = useRef()
-  // const onScroll = (e) => (createRef().current = e.target.scrollTop)
-  // useEffect(() => void onScroll({ target: scrollArea.current }), [])
   const [matcapTexture] = useMatcapTexture('C8D1DC_575B62_818892_6E747B')
 
   return (
