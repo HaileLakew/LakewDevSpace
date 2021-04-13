@@ -172,7 +172,8 @@ a:focus {
   }
 }
 
-/*! locomotive-scroll v4.1.0 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+/*! ---------------------------------------------------------------------------------------- */
+
 html.has-scroll-smooth {
   overflow: hidden; }
 
@@ -239,3 +240,25 @@ html.has-scroll-dragging {
   [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
     right: auto;
     bottom: 0; }
+
+
+    // -----------------------------------------------------
+
+    canvas {
+      position: absolute;
+    }
+    
+    .loading {
+      padding: 10px;
+      transform: translate3d(-50%, -50%, 0);
+    }
+    
+    .scrollArea {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+    }
+    
