@@ -3,13 +3,13 @@ import * as THREE from 'three'
 import { useResource, useThree } from 'react-three-fiber'
 import { Text, useMatcapTexture, Octahedron } from '@react-three/drei'
 
-import useLayers from  '../../Libraries/use-layers';
-import useRenderTarget from  '../../Libraries/use-render-target'; 
+import useLayers from '../../Libraries/use-layers'
+import useRenderTarget from '../../Libraries/use-render-target'
 
-import { ThinFilmFresnelMap } from '../../Libraries/ThinFilmFresnelMap';
+import { ThinFilmFresnelMap } from '../../Libraries/ThinFilmFresnelMap'
 import { mirrorsData } from './data'
 
-import Mirror from '../../Components/Mirror';
+import Mirror from '../../Components/Mirror'
 
 const TEXT_PROPS = {
   font: 'https://fonts.gstatic.com/s/syncopate/v12/pe0pMIuPIYBCpEV5eFdKvtKqBP5p.woff'
@@ -84,19 +84,19 @@ function Scene() {
 
   return (
     <>
-        <Octahedron layers={[11]} name="background" args={[20, 4, 4]} position={[0, 0, -5]}>
-          <meshMatcapMaterial matcap={matcapTexture} side={THREE.BackSide} transparent opacity={0.3} color="#FFFFFF" />
-        </Octahedron>
-        <cubeCamera
-          layers={[11]}
-          name="cubeCamera"
-          ref={cubeCamera}
-          args={[0.1, 100, renderTarget]}
-          position={[0, 0, 5]}
-        />
-        <Title name="title" position={[0, 0, -10]} />
-        <TitleCopies layers={[11]} />
-        <Mirrors layers={[0, 11]} envMap={renderTarget.texture} />
+      <Octahedron layers={[11]} name="background" args={[20, 4, 4]} position={[0, 0, -5]}>
+        <meshMatcapMaterial matcap={matcapTexture} side={THREE.BackSide} transparent opacity={0.3} color="#FFFFFF" />
+      </Octahedron>
+      <cubeCamera
+        layers={[11]}
+        name="cubeCamera"
+        ref={cubeCamera}
+        args={[0.1, 100, renderTarget]}
+        position={[0, 0, 5]}
+      />
+      <Title name="title" position={[0, 0, -10]} />
+      <TitleCopies layers={[11]} />
+      <Mirrors layers={[0, 11]} envMap={renderTarget.texture} />
     </>
   )
 }
