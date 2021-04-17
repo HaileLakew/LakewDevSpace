@@ -2,6 +2,9 @@
 .introduction {
     width: 80vw;
 
+    margin-top: 15%;
+    margin-left: 10%;
+
     &__header {
         font-size: 4rem;
     }
@@ -13,5 +16,16 @@
     &__body {
         font-size: 1.8rem;
         padding: 10px 0px;
+    }
+
+    &__profile-pic {
+        display: block;
+        width: 20vw;
+        height: 20vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        object-fit: cover;
+        border-radius: 50%;
     }
 }
