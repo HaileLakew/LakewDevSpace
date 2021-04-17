@@ -37,7 +37,9 @@ export default function Portfolio(props) {
           </Block>
   
           <Block factor={scrollConfig.introduction.factor} offset={scrollConfig.introduction.offset}>
-              {/* <Content/> */}
+              <Suspense fallback={<Loader />}>
+                <Content right/>
+              </Suspense>
               <Introduction/>
           </Block>
   
@@ -64,13 +66,13 @@ export default function Portfolio(props) {
           <Block factor={1} offset={10}>
             <Content />
           </Block>
-  
+{/*   
           <Block factor={-2} offset={10}>
             <Stripe />
           </Block>
           <Block factor={-2} offset={10}>
             <Stripe />
-          </Block>
+          </Block> */}
         </Canvas>
         <div className="scrollArea" ref={scrollArea} onScroll={onScroll}>
           <div style={{ height: `${state.pages * 100}vh` }} />
