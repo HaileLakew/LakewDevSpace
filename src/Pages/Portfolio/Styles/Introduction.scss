@@ -1,0 +1,17 @@
+
+.introduction {
+    width: 80vw;
+
+    &__header {
+        font-size: 4rem;
+    }
+
+    &__sub-header {
+        font-size: 2rem;
+    }
+
+    &__body {
+        font-size: 1.8rem;
+        padding: 10px 0px;
+    }
+}

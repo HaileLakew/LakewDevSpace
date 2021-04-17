@@ -1,18 +1,30 @@
 import React, { Suspense, useRef, useEffect } from "react"
 import { Canvas} from 'react-three-fiber'
-import { Block } from "../../Components/Blocks"
 import {isMobile} from 'react-device-detect';
-
 import { Html } from '@react-three/drei'
 
 import {Content, Stripe, Loader} from '../../Components/Content'
+import FloatingCube from '../../Components/FloatingCube'
+import { Block } from "../../Components/Blocks"
 
-import LandingPage from '../LandingPage'
-import FloatingCube from '../FloatingCube'
+import Landing from './Parts/Landing'
+import Introduction from './Parts/Introduction'
 
 import state from "../../Libraries/store"
 
-export default function App(props) {
+
+const scrollConfig = {
+  landing: {
+    offset:0,
+    factor:1.5
+  },
+  introduction: {
+    offset:isMobile ? 1.2 : 1.5,
+    factor: 1.5
+  }
+}
+
+export default function Portfolio(props) {
     const scrollArea = useRef()
     const onScroll = (e) => (state.top.current = e.target.scrollTop)
     useEffect(() => void onScroll({ target: scrollArea.current }), [])
@@ -20,21 +32,16 @@ export default function App(props) {
       <>
         <Canvas concurrent shadowMap camera={{ position: [0, 0, 5], fov: 70 }}>
   
-          <Block factor={1.5} offset={0}>
-            <color attach="background" args={['#000']} />
-            <Suspense fallback={<Loader />}>
-              <LandingPage />
-            </Suspense>
-            <ambientLight intensity={0.4} />
+          <Block factor={scrollConfig.landing.factor} offset={0}>
+              <Landing/>
           </Block>
   
-          <Block factor={1.5} offset={isMobile ? 1.2 : 1.5}>
-            <Html>
-                <h1>Hello</h1>
-            </Html>
+          <Block factor={scrollConfig.introduction.factor} offset={scrollConfig.introduction.offset}>
+              {/* <Content/> */}
+              <Introduction/>
           </Block>
   
-          <Block factor={1} offset={isMobile ? 1.8 : 2.3}>
+          <Block factor={1} offset={10}>
             <Content left>
             <Html left>
                 <h1>Hello</h1>
@@ -42,11 +49,11 @@ export default function App(props) {
               </Content>
           </Block>
   
-          <Block factor={1} offset={isMobile ? 2.4 : 3.5}>
+          <Block factor={1} offset={10}>
             <Content />
           </Block>
   
-          <Block factor={3} offset={isMobile ? 2 : 4.5}>
+          <Block factor={3} offset={10}>
             <color attach="background" args={['#000']} />
             <Suspense fallback={<Loader />}>
               <FloatingCube />
@@ -54,22 +61,19 @@ export default function App(props) {
             <ambientLight intensity={0.4} />
           </Block>
   
-          <Block factor={1} offset={isMobile ? 3: 6}>
+          <Block factor={1} offset={10}>
             <Content />
           </Block>
   
-          <Block factor={-2} offset={3.4}>
+          <Block factor={-2} offset={10}>
             <Stripe />
           </Block>
-          <Block factor={-2} offset={2}>
+          <Block factor={-2} offset={10}>
             <Stripe />
           </Block>
         </Canvas>
         <div className="scrollArea" ref={scrollArea} onScroll={onScroll}>
           <div style={{ height: `${state.pages * 100}vh` }} />
-        </div>
-        <div>
-          <h1>YEEEET</h1>
         </div>
       </>
     )
