@@ -1,5 +1,4 @@
 import React from 'react'
-import { Html } from '@react-three/drei'
 
 import TextLoop from 'react-text-loop'
 
@@ -7,7 +6,7 @@ import Image from '../../../Assets/Img5.jpg'
 
 export default function Introduction() {
   return (
-    <div>
+    <div style={{display: 'flex'}}>
       <div className="introduction">
         <div className="introduction__header">Hello, I'm Haile</div>
         <div className="introduction__sub-header">

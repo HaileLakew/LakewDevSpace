@@ -1,14 +1,18 @@
-import React, { Suspense, useRef, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { Canvas } from 'react-three-fiber'
 import { isMobile } from 'react-device-detect'
-import { Html } from '@react-three/drei'
+
+import { Parallax, Background } from "react-parallax";
 
 import { Block } from '../../Components/Blocks'
 
 import Landing from './Parts/Landing'
-import Introduction from './Parts/Introduction'
+import Introduction from './Parts/Introduction';
+import Skill from './Parts/Skills'
+import Timeline from './Parts/Timeline';
 
 import state from '../../Libraries/store'
+
 
 export default function Portfolio(props) {
   const scrollArea = useRef()
@@ -23,10 +27,14 @@ export default function Portfolio(props) {
       </Canvas>
 
       <div className="scrollArea" ref={scrollArea} onScroll={onScroll}>
-        <div style={{ height: `${state.pages * 60}vh` }} />
-      </div>
+        <div style={{ height: '110vh' }} />
+        
+        <Introduction />
 
-      <Introduction />
+        <Skill/>
+
+        <Timeline/>
+      </div>
     </>
   )
 }
