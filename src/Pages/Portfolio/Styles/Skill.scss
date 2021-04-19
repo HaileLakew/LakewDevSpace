@@ -1,32 +1,32 @@
 .skills {
-    background-color: white;
-    color: black;
-    
-    margin: 10% 0%;
-    padding: 10% 0%;
+  background-color: white;
+  color: black;
 
-    &__loader {
-        // display: flex;
-        padding: 1%;
-        margin-top: 1%;
-        white-space: nowrap;
+  margin: 10% 0%;
+  padding: 10% 0%;
 
-        &-container{
-            width: 50vw;
-        }
+  &__loader {
+    // display: flex;
+    padding: 1%;
+    margin-top: 1%;
+    white-space: nowrap;
 
-        &-label{
-            white-space: nowrap;
-        }
+    &-container {
+      width: 50vw;
     }
 
-    &__profile-pic{
-        display: block;
-        width: 25vw;
-        height: 25vw;
-        margin-left: auto;
-        margin-right: auto;
-        object-fit: cover;
-        border-radius: 50%;
+    &-label {
+      white-space: nowrap;
     }
+  }
+
+  &__profile-pic {
+    display: block;
+    width: 25vw;
+    height: 25vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 }
