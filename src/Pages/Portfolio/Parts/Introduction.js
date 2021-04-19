@@ -2,12 +2,13 @@ import React from 'react'
 
 import Zoom from 'react-reveal/Zoom';
 import TextLoop from 'react-text-loop'
-
+import ReactFloaterJs from 'react-floaterjs'
 import Image from '../../../Assets/Img5.jpg'
 
 export default function Introduction() {
   return (
     <Zoom>
+
       <div style={{ display: 'flex' }}>
         <div className="introduction">
           <div className="introduction__header">Hello, I'm Haile</div>
@@ -32,9 +33,12 @@ export default function Introduction() {
             is a fun thing to do!
           </div>
         </div>
-
-        <img className="introduction__profile-pic" src={Image} alt="It's me Haile" />
+        <ReactFloaterJs>
+          <img className="introduction__profile-pic" src={Image} alt="It's me Haile" />
+        </ReactFloaterJs>
       </div>
+
+
     </Zoom>
   )
 }

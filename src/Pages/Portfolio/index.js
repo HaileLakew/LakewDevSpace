@@ -2,11 +2,11 @@ import React, { useRef, useEffect } from 'react'
 import { Canvas } from 'react-three-fiber'
 import { isMobile } from 'react-device-detect'
 
-import Gallery from "react-photo-gallery";
-import { photos } from "./photo";
+import Gallery from 'react-photo-gallery'
+import { photos } from './photo'
 
 import { Block } from '../../Components/Blocks'
-
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Landing from './Parts/Landing'
 import Introduction from './Parts/Introduction'
 import Skill from './Parts/Skills'
@@ -20,22 +20,29 @@ export default function Portfolio(props) {
   useEffect(() => void onScroll({ target: scrollArea.current }), [])
   return (
     <>
-      <Canvas concurrent shadowMap camera={{ position: [0, 0, 5], fov: 70 }}>
-        <Block factor={1.5} offset={0}>
-          <Landing />
-        </Block>
-      </Canvas>
-
       <div className="scrollArea" ref={scrollArea} onScroll={onScroll}>
-        <div style={{ height: '110vh' }} />
+        <Canvas concurrent shadowMap camera={{ position: [0, 0, 5], fov: 70 }} style={{height: `${100-state.top.current}vh`}}>
+          <Block factor={1.5} offset={0}>
+            <Landing />
+          </Block>
+        </Canvas>
+        <Parallax ref={scrollArea} pages={3} scrolling={true}>
+          <ParallaxLayer offset={0} speed={1}>
+            <Introduction />
+          </ParallaxLayer>
 
-        <Introduction />
+          <ParallaxLayer offset={1} speed={1}>
+            <Skill />
+          </ParallaxLayer>
 
-        <Skill />
+          <ParallaxLayer offset={2} speed={1}>
+            <Timeline />
+          </ParallaxLayer>
 
-        <Timeline />
-
-        <Gallery styles={{background: '#fff', margin: '10%'}}photos={photos} />
+          <ParallaxLayer offset={3} speed={0.5}>
+            <Gallery styles={{ background: '#fff', margin: '10%' }} photos={photos} />
+          </ParallaxLayer>
+        </Parallax>
       </div>
     </>
   )
