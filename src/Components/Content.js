@@ -5,19 +5,6 @@ import { useBlock } from './Blocks'
 
 import '../Libraries/CustomMaterial'
 
-// function Plane() {
-//   const ref = useRef()
-//   const [texture1, texture2, dispTexture] = useLoader(TextureLoader, [img1, img2, disp])
-//   const [hovered, setHover] = useState(false)
-//   useFrame(() => (ref.current.dispFactor = lerp(ref.current.dispFactor, hovered ? 1 : 0, 0.1)))
-//   return (
-//       <mesh onPointerMove={(e) => setHover(true)} onPointerOut={(e) => setHover(false)} scale={[3, 3, 1]}>
-//         <planeBufferGeometry attach="geometry" />
-//         <customMaterial ref={ref} attach="material" tex={texture1} tex2={texture2} disp={dispTexture} />
-//       </mesh>
-//   )
-// }
-
 function Plane({ color = 'white', map, ...props }) {
   return (
     <mesh {...props}>
