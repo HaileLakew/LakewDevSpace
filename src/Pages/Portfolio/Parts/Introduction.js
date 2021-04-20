@@ -5,7 +5,7 @@ import Image from '../../../Assets/Img5.jpg'
 
 export default function Introduction() {
   return (
-    <div style={{ display: 'flex' }}>
+    <div className="introduction__flex">
       <div className="introduction">
         <div className="introduction__header">Hello, I'm Haile</div>
         <div className="introduction__sub-header">

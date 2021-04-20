@@ -19,7 +19,7 @@ function ProgressBar({ amount }) {
 
 export default function Introduction() {
   return (
-    <div style={{ display: 'flex' }} className="skills">
+    <div className="skills skills__flex">
       <img className="skills__profile-pic" src={Image} alt="It's me Haile" />
       <div className="skills__loader-container">
         <h1 style={{ paddingLeft: '1%' }}>Here's What I Can Do</h1>

@@ -3,8 +3,6 @@ import { useProgress, Html } from '@react-three/drei'
 
 import { useBlock } from './Blocks'
 
-import '../Libraries/CustomMaterial'
-
 function Plane({ color = 'white', map, ...props }) {
   return (
     <mesh {...props}>

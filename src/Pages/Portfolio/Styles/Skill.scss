@@ -2,8 +2,18 @@
   // background-color: white;
   // color: black;
 
-  margin: 10% 0%;
-  padding: 10% 0%;
+  margin-left: 7%;
+
+  @media (min-width: 768px) {
+    margin: 10% 0%;
+    padding: 10% 0%;
+  }
+
+  &__flex {
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
 
   &__loader {
     // display: flex;
@@ -12,7 +22,9 @@
     white-space: nowrap;
 
     &-container {
-      width: 50vw;
+      @media (min-width: 768px) {
+        width: 50vw;
+      }
     }
 
     &-label {
@@ -21,12 +33,19 @@
   }
 
   &__profile-pic {
-    display: block;
-    width: 25vw;
-    height: 25vw;
-    margin-left: 10vw;
+    display: none;
+    width: 75vw;
+    height: 75vw;
+    margin-left: 5vw;
     margin-right: 10vw;
     object-fit: cover;
     border-radius: 50%;
+
+    @media (min-width: 768px) {
+      display: block;
+      margin-left: 10vw;
+      width: 25vw;
+      height: 25vw;
+    }
   }
 }
