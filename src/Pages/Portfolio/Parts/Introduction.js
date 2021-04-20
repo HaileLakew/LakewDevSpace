@@ -1,14 +1,11 @@
 import React from 'react'
 
-import Zoom from 'react-reveal/Zoom';
 import TextLoop from 'react-text-loop'
 import ReactFloaterJs from 'react-floaterjs'
 import Image from '../../../Assets/Img5.jpg'
 
 export default function Introduction() {
   return (
-    <Zoom>
-
       <div style={{ display: 'flex' }}>
         <div className="introduction">
           <div className="introduction__header">Hello, I'm Haile</div>
@@ -29,16 +26,13 @@ export default function Introduction() {
             time ever actually programming actually started when I was 14, in highschool. We coded a pretty cool Java
             space shooter game, and since then, I've been hooked! The feeling of having no limits except time and effort
             to do whatever we want has always been the gleam in my eye. And all of my fond memories is going from.. "Can
-            we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style. I love to have fun coding, and coding
-            is a fun thing to do!
+            we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style. I love to have fun coding, and
+            coding is a fun thing to do!
           </div>
         </div>
-        <ReactFloaterJs>
+        {/* <ReactFloaterJs> */}
           <img className="introduction__profile-pic" src={Image} alt="It's me Haile" />
-        </ReactFloaterJs>
+        {/* </ReactFloaterJs> */}
       </div>
-
-
-    </Zoom>
   )
 }
