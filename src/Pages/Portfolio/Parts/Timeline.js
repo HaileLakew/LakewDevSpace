@@ -3,89 +3,100 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 
-import Image from '../../../Assets/Img5.jpg'
-
 export default function Timeline() {
   return (
     <VerticalTimeline>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        contentStyle={{ color: '#FF8C00' }}
+        contentStyle={{ background:  'rgb(256, 256, 256)',color: '#FF8C00' }}
         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-        date="2011 - Present"
+        date="Mar 2020 - Present"
         iconStyle={{ background: '#fff', color: '#fff' }}
         // icon={<WorkIcon />}
       >
         <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
         <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
-        <p>Yeet</p>
+        <ul>
+          <li>Mentored other engineers in learning code practices and helping them take on challenging projects</li>
+          <li>Took ownership and leadership over stories and epics, and provided new tools for businesses partners to interact with customers through our site</li>
+          <li>Coordinated with team members to optimize the site's Lighthouse scores. This included releasing packages that included Brotli Compression, IE support removal, and conversion of images to Webp</li>
+        </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2010 - 2011"
+        contentStyle={{ background:  'rgb(256, 256, 256)',color: '#FF8C00' }}
+        date="Jan 2018 - Mar 2020"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         // icon={<WorkIcon />}
       >
-        <h3 className="vertical-timeline-element-title">Art Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-        <p>Creative Direction, User Experience, Visual Design, SEO, Online Marketing</p>
+        <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+        <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+        <ul>
+          <li>Worked on providing new features to our online storefront. Projects ranged from writing reusable/configurable calculators and tooltips, to providing installation options to DIY customers</li>
+          <li>Reviewed GitHub pull requests to uphold code quality, while writing unit tests to help automate quality assurance</li>
+          <li>Deployed application as DevOps. Responsibilities ranged from maintaining lower life cycle states and coordinating with QA, to working on and deploying hotfixes with SRE resources</li>
+        </ul>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        contentStyle={{ background:  'rgb(256, 256, 256)',color: '#FF8C00' }}
+        className="vertical-timeline-element--education"
+        date="May 2018"
+        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+        // icon={<SchoolIcon />}
+      >
+        <h3 className="vertical-timeline-element-title">Graduation with BS in Computer Science</h3>
+        <h4 className="vertical-timeline-element-subtitle">University of Texas at Dallas</h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2008 - 2010"
+        contentStyle={{ background:  'rgb(256, 256, 256)',color: '#FF8C00' }}
+        date="May 2017 - Aug 2017"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         // icon={<WorkIcon />}
       >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-        <p>User Experience, Visual Design</p>
+        <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
+        <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+        <ul>
+          <li>Enabled Anti Cross Site Scripting capabilities to system framework</li>
+          <li>Created Unit Tests for multiple modules, such as DES encryption systems</li>
+          <li>Used .NET framework and C# to modernize legacy code</li>
+        </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2006 - 2008"
+        contentStyle={{ background:  'rgb(256, 256, 256)',color: '#FF8C00' }}
+        date="May 2016 - Aug 2016"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         // icon={<WorkIcon />}
       >
-        <h3 className="vertical-timeline-element-title">Web Designer</h3>
-        <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-        <p>User Experience, Visual Design</p>
+        <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
+        <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+        <ul>
+          <li>Enabled XML capabilities in effort to modernize and streamline embedded software</li>
+          <li>Collaborated with a team to maintain and peer review new aircraft software</li>
+        </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
+        contentStyle={{ background:  'rgb(256, 256, 256)',color: '#FF8C00' }}
         className="vertical-timeline-element--education"
-        date="April 2013"
+        date="May 2014"
         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
         // icon={<SchoolIcon />}
       >
-        <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-        <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-        <p>Strategy, Social Media</p>
+        <h3 className="vertical-timeline-element-title">Started in Computer Science</h3>
+        <h4 className="vertical-timeline-element-subtitle">University of Texas at Dallas</h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
+        contentStyle={{ background:  'rgb(256, 256, 256)',color: '#FF8C00' }}
         className="vertical-timeline-element--education"
-        date="November 2012"
+        date="Fall 2010"
         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
         // icon={<SchoolIcon />}
       >
-        <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-        <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-        <p>Creative Direction, User Experience, Visual Design</p>
+        <h3 className="vertical-timeline-element-title">Started Coding with Java</h3>
+        <h4 className="vertical-timeline-element-subtitle">School of Science and Engineering High School</h4>
+        <p>Learned the basics of programming in Java in Freshman year of Highschool</p>
       </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="2002 - 2006"
-        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        // icon={<SchoolIcon />}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Bachelor of Science in Interactive Digital Media Visual Imaging
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-        <p>Creative Direction, Visual Design</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-        // icon={<StarIcon />}
-      />
     </VerticalTimeline>
   )
 }

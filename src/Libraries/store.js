@@ -5,8 +5,9 @@ const state = {
   pages: 2,
   zoom: 75,
   top: createRef(),
-  yeet: ()=>{
-    console.log(`%c ________________________________________
+  yeet: () => {
+    console.log(
+      `%c ________________________________________
 < Moooo, (Hey There, You found what you looking for?) mooooo >
  ----------------------------------------
         \\   ^__^
@@ -15,7 +16,9 @@ const state = {
                 ||----w |
                 ||     ||
                           - Haile Lakew
-                `, "font-family:monospace")
+                `,
+      'font-family:monospace'
+    )
   }
 }
 

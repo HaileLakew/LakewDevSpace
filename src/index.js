@@ -7,13 +7,13 @@ import state from './Libraries/store'
 import './index.scss'
 
 function App(props) {
-  setTimeout(()=>{
-    state.yeet();
+  setTimeout(() => {
+    state.yeet()
   }, 2000)
 
   return (
     <>
-      <Portfolio/>
+      <Portfolio />
     </>
   )
 }

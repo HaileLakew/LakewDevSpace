@@ -85,8 +85,8 @@ class Tile extends React.Component {
   render() {
     // Modify styles based on state values
     let tileStyle = {}
-    let headerStyle = {}
-    let zoom = {}
+    // let headerStyle = {}
+    // let zoom = {}
     // When tile clicked
     if (this.state.open) {
       tileStyle = {
