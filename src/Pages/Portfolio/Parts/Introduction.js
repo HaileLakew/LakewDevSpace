@@ -6,31 +6,37 @@ import Image from '../../../Assets/Img5.jpg'
 export default function Introduction() {
   return (
     <div className="introduction__flex">
-      <div className="introduction">
-        <div className="introduction__header">Hello, I'm Haile</div>
-        <div className="introduction__sub-header">
-          I am a
-          <TextLoop interval={950}>
-            <span>n Engineer</span>
-            <span>n Artist</span>
-            <span>&ensp;Tinkerer</span>
-            <span>&ensp;Christian</span>
-            <span>&ensp;Programmer</span>
-            <span>&ensp;Troubleshooter</span>
-          </TextLoop>
-          &ensp;by nature
+      <div className="introduction card">
+        <div className="face face1">
+          <div className="content">
+            <div className="introduction__header">Hello, I'm Haile</div>
+            <div className="introduction__sub-header">
+              I am a
+              <TextLoop interval={950}>
+                <span>n Engineer</span>
+                <span>n Artist</span>
+                <span>&ensp;Tinkerer</span>
+                <span>&ensp;Christian</span>
+                <span>&ensp;Programmer</span>
+                <span>&ensp;Troubleshooter</span>
+              </TextLoop>
+              &ensp;by nature
+            </div>
+          </div>         
         </div>
-        <div className="introduction__body">
-          A Javascript Enthusiast, I've put my hand into a lot of different kinds of proverbial cookie pots. My first
-          time ever actually programming actually started when I was 14, in highschool. We coded a pretty cool Java
-          space shooter game, and since then, I've been hooked! The feeling of having no limits except time and effort
-          to do whatever we want has always been the gleam in my eye. And all of my fond memories is going from.. "Can
-          we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style. I love to have fun coding, and coding
-          is a fun thing to do!
+        <div className="face face2">
+          <div className="introduction__body content">
+            A Javascript Enthusiast, I've put my hand into a lot of different kinds of proverbial cookie pots. My first
+            time ever actually programming actually started when I was 14, in highschool. We coded a pretty cool Java
+            space shooter game, and since then, I've been hooked! The feeling of having no limits except time and effort
+            to do whatever we want has always been the gleam in my eye. And all of my fond memories is going from.. "Can
+            we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style. I love to have fun coding, and coding
+            is a fun thing to do!
+          </div>
         </div>
       </div>
 
-      <img className="introduction__profile-pic" src={Image} alt="It's me Haile" />
+        <img className="introduction__profile-pic " src={Image} alt="It's me Haile" />
     </div>
   )
 }

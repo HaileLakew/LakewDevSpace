@@ -1,4 +1,4 @@
-import React, { useRef} from 'react'
+import React, { useRef } from 'react'
 import { Canvas } from 'react-three-fiber'
 import { isMobile } from 'react-device-detect'
 import ReactFloaterJs from 'react-floaterjs'
@@ -16,7 +16,7 @@ export default function Portfolio(props) {
   return (
     <>
       <Parallax ref={scrollArea} pages={4}>
-        <ParallaxLayer offset={0} speed={-1.5}>
+        <ParallaxLayer offset={0} speed={-1.3}>
           <Canvas concurrent shadowMap camera={{ position: [0, 0, 5], fov: 70 }}>
             <Spacer />
           </Canvas>
@@ -41,14 +41,16 @@ export default function Portfolio(props) {
         </ParallaxLayer>
 
         <ParallaxLayer offset={3.5} speed={1}>
-          <Timeline />
+          <ReactFloaterJs>
+            <Timeline />
+          </ReactFloaterJs>
         </ParallaxLayer>
-
+{/* 
         <ParallaxLayer offset={4} speed={0.5}>
           <ReactFloaterJs>
             <PhotoGallery />
           </ReactFloaterJs>
-        </ParallaxLayer>
+        </ParallaxLayer> */}
       </Parallax>
     </>
   )
