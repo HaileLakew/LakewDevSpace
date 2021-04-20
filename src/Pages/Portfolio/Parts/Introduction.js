@@ -22,7 +22,7 @@ export default function Introduction() {
               </TextLoop>
               &ensp;by nature
             </div>
-          </div>         
+          </div>
         </div>
         <div className="face face2">
           <div className="introduction__body content">
@@ -30,13 +30,14 @@ export default function Introduction() {
             time ever actually programming actually started when I was 14, in highschool. We coded a pretty cool Java
             space shooter game, and since then, I've been hooked! The feeling of having no limits except time and effort
             to do whatever we want has always been the gleam in my eye. And all of my fond memories is going from.. "Can
-            we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style. I love to have fun coding, and coding
-            is a fun thing to do!
+            we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style. I love to have fun coding, and
+            coding is a fun thing to do!
           </div>
         </div>
       </div>
-
+      <div>
         <img className="introduction__profile-pic " src={Image} alt="It's me Haile" />
+      </div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ReactFloaterJs from 'react-floaterjs'
 import { Progress } from 'react-sweet-progress'
 import 'react-sweet-progress/lib/style.css'
 import Image from '../../../Assets/Img10.JPG'
@@ -19,8 +19,11 @@ function ProgressBar({ amount }) {
 
 export default function Introduction() {
   return (
-    <div className="skills skills__flex yeet">
-      <img className="skills__profile-pic" src={Image} alt="It's me Haile" />
+    <div className="skills skills__flex">
+      <ReactFloaterJs>
+          <img className="skills__profile-pic" src={Image} alt="It's me Haile" />
+      </ReactFloaterJs>
+      
       <div className="skills__loader-container">
         <h1 style={{ paddingLeft: '1%' }}>Here's What I Can Do</h1>
         <div className="skills__loader">

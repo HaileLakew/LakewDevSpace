@@ -1,11 +1,8 @@
 .skills {
-  // background-color: white;
-  // color: black;
-
   margin-left: 7%;
 
   @media (min-width: 768px) {
-    margin: 10% 0%;
+    margin: 10%;
     padding: 5% 0%;
   }
 
@@ -32,6 +29,7 @@
     }
   }
 
+
   &__profile-pic {
     display: none;
     width: 75vw;
@@ -41,9 +39,14 @@
     object-fit: cover;
     border-radius: 50%;
 
+    transition: transform 500ms ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
     @media (min-width: 768px) {
       display: block;
-      margin-left: 10vw;
       width: 25vw;
       height: 25vw;
     }

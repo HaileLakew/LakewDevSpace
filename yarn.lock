@@ -9355,6 +9355,16 @@ react-app-polyfill@^1.0.6:
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
 
+react-atv-img@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-atv-img/-/react-atv-img-0.1.1.tgz#6028f3815fe00fe61261d1c23db95fb2acb25675"
+  integrity sha1-YCjzgV/gD+YSYdHCPblfsqyyVnU=
+
+react-atv@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/react-atv/-/react-atv-0.1.10.tgz#5296ec269b3017c140a1310cbee240bf3263238f"
+  integrity sha1-UpbsJpswF8FAoTEMvuJAvzJjI48=
+
 react-countup@^4.3.3:
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/react-countup/-/react-countup-4.3.3.tgz#143a8d854d47290b73d6915eac20a12d839153c2"
