@@ -16,8 +16,7 @@ export default function Portfolio(props) {
   return (
     <>
       <Parallax ref={scrollArea} pages={4}>
-
-        <ParallaxLayer offset={0} speed={-1.3}>
+        <ParallaxLayer offset={0.1} speed={-1.3}>
           <Canvas concurrent shadowMap camera={{ position: [0, 0, 5], fov: 70 }}>
             <Spacer />
           </Canvas>
@@ -31,17 +30,15 @@ export default function Portfolio(props) {
           <div class="plane yeetBackground" />
         </ParallaxLayer>
 
+        {/* <ParallaxLayer offset={3} speed={1.55}>
+          <div class="plane2" />
+        </ParallaxLayer> */}
 
-        <ParallaxLayer offset={3} speed={1.55}>
-          <div class="plane2"/>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={3} speed={1.55}>
-          <ReactFloaterJs>          
-            <div class=" plane3 yeet" />
+        <ParallaxLayer offset={2.7} speed={1.7}>
+          <ReactFloaterJs>
+            <div class="plane yeetBackground" />
           </ReactFloaterJs>
         </ParallaxLayer>
-
 
         <ParallaxLayer offset={0} speed={1}>
           <Canvas concurrent shadowMap camera={{ position: [0, 0, 5], fov: 70 }}>
@@ -62,7 +59,7 @@ export default function Portfolio(props) {
         </ParallaxLayer>
 
         <ParallaxLayer offset={3.5} speed={1}>
-            <Timeline />
+          <Timeline />
         </ParallaxLayer>
       </Parallax>
     </>

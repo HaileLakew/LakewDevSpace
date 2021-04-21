@@ -5,7 +5,7 @@ import Image from '../../../Assets/Img5.jpg'
 
 export default function Introduction() {
   return (
-    <div className="introduction__flex">
+    <div className="introduction__flex shine">
       <div className="introduction card">
         <div className="face face1">
           <div className="content">

@@ -48,35 +48,38 @@ body {
 }
 
 /// ----------------------------------------------
-.polygon{
-	height: 100vh;
-	background: #2e1c31;
-	clip-path: polygon(0 50%, 100% 0,100% 50%,0 100%);
-	position: relative;
+.polygon {
+  height: 100vh;
+  background: #2e1c31;
+  clip-path: polygon(0 50%, 100% 0, 100% 50%, 0 100%);
+  position: relative;
 }
 
-.plane{
+//---
+
+.plane {
   margin: 3%;
-	height: 85vh;
+  height: 85vh;
   width: 90vw;
-	background: #080409;
-	position: relative;
+  background: #000000;
+  position: relative;
 }
 
-.plane2{
+.plane2 {
   margin: 3%;
-	height: 75vh;
+  height: 75vh;
   width: 93vw;
-	background: #080409;
-	position: relative;
+  background: #080409;
+  position: relative;
 }
 
-.plane3{
-  margin-left: 7%;
-	height: 70vh;
-  width: 85vw;
-	background: #000000;
-	position: relative;
+.plane3 {
+  margin-top: 5%;
+  margin: 10%;
+  height: 40vh;
+  // width: 85vw;
+  background: #000000;
+  position: relative;
 }
 // ----------------------------------------------
 
