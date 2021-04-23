@@ -3,7 +3,7 @@ import * as THREE from 'three'
 import { useResource, useThree } from 'react-three-fiber'
 import { Text, useMatcapTexture, Octahedron } from '@react-three/drei'
 
-import useSlerp from '../../Libraries/use-slerp'; 
+import useSlerp from '../../Libraries/use-slerp'
 import useLayers from '../../Libraries/use-layers'
 import useRenderTarget from '../../Libraries/use-render-target'
 

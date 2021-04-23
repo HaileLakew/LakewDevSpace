@@ -7,7 +7,7 @@ export default function Timeline() {
   return (
     <VerticalTimeline>
       <VerticalTimelineElement
-        className="vertical-timeline-element--work yeetText"
+        className="vertical-timeline-element--work blackText"
         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
         date="Mar 2020 - Present"
         iconStyle={{ background: '#fff', color: '#fff' }}
@@ -28,7 +28,7 @@ export default function Timeline() {
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element--work yeetText"
+        className="vertical-timeline-element--work blackText"
         date="Jan 2018 - Mar 2020"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         // icon={<WorkIcon />}
@@ -51,7 +51,7 @@ export default function Timeline() {
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element--education yeetText"
+        className="vertical-timeline-element--education blackText"
         date="May 2018"
         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
         // icon={<SchoolIcon />}
@@ -60,7 +60,7 @@ export default function Timeline() {
         <h4 className="vertical-timeline-element-subtitle">University of Texas at Dallas</h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element--work yeetText"
+        className="vertical-timeline-element--work blackText"
         date="May 2017 - Aug 2017"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         // icon={<WorkIcon />}
@@ -74,7 +74,7 @@ export default function Timeline() {
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element--work yeetText"
+        className="vertical-timeline-element--work blackText"
         date="May 2016 - Aug 2016"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         // icon={<WorkIcon />}
@@ -87,7 +87,7 @@ export default function Timeline() {
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element--education yeetText"
+        className="vertical-timeline-element--education blackText"
         date="May 2014"
         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
         // icon={<SchoolIcon />}
@@ -96,7 +96,7 @@ export default function Timeline() {
         <h4 className="vertical-timeline-element-subtitle">University of Texas at Dallas</h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element--education yeetText"
+        className="vertical-timeline-element--education blackText"
         date="Fall 2010"
         iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
         // icon={<SchoolIcon />}

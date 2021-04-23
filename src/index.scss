@@ -136,19 +136,25 @@ body {
 }
 
 .yeetText {
-  animation: textColor 10s ease infinite;
+//   animation: textColor 10s ease infinite;
 
-  @keyframes textColor {
-    0% {
-      color: #7e0fff;
-    }
-    50% {
-      color: teal;
-    }
-    100% {
-      color: #7e0fff;
-    }
-  }
+//   @keyframes textColor {
+//     0% {
+//       color: #7e0fff;
+//     }
+//     50% {
+//       color: teal;
+//     }
+//     100% {
+//       color: #7e0fff;
+//     }
+//   }
+// }
+  color: white
+}
+
+.blackText{
+  color: black;
 }
 
 .yeetBackground {
@@ -157,3 +163,9 @@ body {
 
 //-----------------------------------------
 @import './Pages/Portfolio/Styles/index.scss';
+
+//---
+.ccard {
+  transition: box-shadow 0.5s;
+  will-change: transform;
+}
