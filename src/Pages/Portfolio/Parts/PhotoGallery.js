@@ -1,18 +1,17 @@
 import React from 'react'
-import { ProGallery } from 'pro-gallery';
+import { ProGallery } from 'pro-gallery'
 import { isMobile } from 'react-device-detect'
-import 'pro-gallery/dist/statics/main.css';
+import 'pro-gallery/dist/statics/main.css'
 
 function importAll(r) {
-  return r.keys().map(r);
+  return r.keys().map(r)
 }
 
-const images = importAll(require.context('./../../../Assets', false, /\.(png|jpe?g|svg|JPG)$/));
+const images = importAll(require.context('./../../../Assets', false, /\.(png|jpe?g|svg|JPG)$/))
 
 export default function Gallery() {
-
-  const items = images.map((image, index)=>{
-    return   {
+  const items = images.map((image, index) => {
+    return {
       itemId: 'sample-id',
       mediaUrl: image,
       metaData: {
@@ -25,32 +24,25 @@ export default function Gallery() {
         link: {
           url: 'http://example.com',
           target: '_blank'
-        },
+        }
       }
     }
   })
 
   const options = {
-    galleryLayout: isMobile? -1 : -2,
+    galleryLayout: isMobile ? -1 : -2,
     // isVertical: true,
     scrollAnimation: 'SLIDE_UP',
     overlayAnimation: 'EXPAND',
     hoveringBehaviour: 'NEVER_SHOW',
     imageHoverAnimation: 'ZOOM_IN',
-    imagePlacementAnimation: 'SLIDE',
-  };
+    imagePlacementAnimation: 'SLIDE'
+  }
 
   const container = {
-    width: isMobile? window.innerWidth: window.innerWidth/2,
+    width: isMobile ? window.innerWidth : window.innerWidth / 2
     // height: window.innerHeight
-  };
+  }
 
-
-  return (
-    <ProGallery
-      items={items}
-      options={options}
-      container={container}
-    />
-  );
+  return <ProGallery items={items} options={options} container={container} />
 }

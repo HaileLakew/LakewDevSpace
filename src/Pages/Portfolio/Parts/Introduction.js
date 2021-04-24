@@ -1,7 +1,7 @@
 import React from 'react'
 
 import TextLoop from 'react-text-loop'
-import Image from '../../../Assets/Img5.jpg'
+import Image from '../../../Assets/Photos/Img5.jpg'
 
 export default function Introduction() {
   return (

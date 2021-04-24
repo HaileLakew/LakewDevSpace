@@ -2,13 +2,13 @@
   // margin-top: auto;
   margin-right: 5%;
 
-  @media (min-width: 768px) {
+  @media (min-width:1025px) {
     width: 40vw;
     margin-left: 10%;
   }
 
   &__flex {
-    @media (min-width: 768px) {
+    @media (min-width:1025px) {
       display: flex;
     }
   }
@@ -16,7 +16,7 @@
   &__header {
     font-size: 2rem;
 
-    @media (min-width: 768px) {
+    @media (min-width:1025px) {
       font-size: 4rem;
     }
   }
@@ -24,7 +24,7 @@
   &__sub-header {
     font-size: 1rem;
 
-    @media (min-width: 768px) {
+    @media (min-width:1025px) {
       font-size: 2rem;
     }
   }
@@ -32,19 +32,21 @@
   &__body {
     font-size: 1rem;
     padding: 10px 0px;
+    margin-top: 25%;
 
-    @media (min-width: 768px) {
+    @media (min-width:1025px) {
+      margin-top: 5%;
       font-size: 1.4rem;
     }
   }
 
   &__profile-pic {
     display: block;
-    width: 75vw;
-    height: 75vw;
+    width: 70vw;
+    height: 70vw;
     margin-left: auto;
     margin-right: auto;
-
+    margin-top: 27%;
     object-fit: cover;
     border-radius: 50%;
 
@@ -54,7 +56,7 @@
       transform: scale(1.1);
     }
 
-    @media (min-width: 768px) {
+    @media (min-width:1025px) {
       width: 25vw;
       height: 25vw;
     }

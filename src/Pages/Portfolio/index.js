@@ -10,35 +10,32 @@ import Introduction from './Parts/Introduction'
 import Skill from './Parts/Skills'
 import Timeline from './Parts/Timeline'
 import PhotoGallery from './Parts/PhotoGallery'
+import Connect from './Parts/Connect'
 
 export default function Portfolio(props) {
   const scrollArea = useRef()
   return (
     <>
-      <Parallax ref={scrollArea} pages={3.3}>
+      <Parallax ref={scrollArea} pages={isMobile? 4.75 :3.5}>
         <ParallaxLayer offset={0.1} speed={-1.5}>
           <Canvas concurrent shadowMap camera={{ position: [0, 0, 5], fov: 70 }}>
             <Spacer />
           </Canvas>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={-3.5} speed={-3}>
-          <div class="polygon yeetBackground" />
+        <ParallaxLayer offset={isMobile? 7: 5} speed={1}>
+          <Canvas concurrent shadowMap camera={{ position: [0, 0, 5], fov: 70 }}>
+            <Spacer />
+          </Canvas>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={1.5}>
+        {/* <ParallaxLayer offset={isMobile? -3.8 :-2.4} speed={-3}>
+          <div class="polygon yeetBackground" />
+        </ParallaxLayer> */}
+
+        <ParallaxLayer offset={1} speed={1.55}>
           <div class="plane yeetBackground" />
         </ParallaxLayer>
-
-        {/* <ParallaxLayer offset={3} speed={1.55}>
-          <div class="plane2" />
-        </ParallaxLayer> */}
-{/* 
-        <ParallaxLayer offset={2.7} speed={1.7}>
-          <ReactFloaterJs>
-            <div class="plane yeetBackground" />
-          </ReactFloaterJs>
-        </ParallaxLayer> */}
 
         <ParallaxLayer offset={0} speed={1}>
           <Canvas concurrent shadowMap camera={{ position: [0, 0, 5], fov: 70 }}>
@@ -52,13 +49,21 @@ export default function Portfolio(props) {
           </ReactFloaterJs>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2.45} speed={1.3}>
-            <Skill />
+        <ParallaxLayer offset={isMobile? 3.2: 2.45} speed={1.3}>
+          <Skill />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3.5} speed={1}>
+        <ParallaxLayer offset={isMobile? 3.7: 3.5} speed={1}>
           <Timeline />
         </ParallaxLayer>
+
+        <ParallaxLayer offset={isMobile? 8.15: 5.3} speed={1}>
+          <ReactFloaterJs>
+            <Connect />
+          </ReactFloaterJs>
+        </ParallaxLayer>
+
+
 
         {/* <ParallaxLayer offset={5.2} speed={1}>
             <PhotoGallery />
