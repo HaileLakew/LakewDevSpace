@@ -3,7 +3,7 @@ import React from 'react'
 import TextLoop from 'react-text-loop'
 import { isMobile } from 'react-device-detect'
 
-import Image from '../../../Assets/Photos/Img5.jpg'
+import Image from '../../../Assets/Photos/Img5.webp'
 
 export default function Introduction() {
   return (

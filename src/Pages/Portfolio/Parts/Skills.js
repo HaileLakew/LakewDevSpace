@@ -4,7 +4,7 @@ import { Progress } from 'react-sweet-progress'
 import 'react-sweet-progress/lib/style.css'
 import { isMobile } from 'react-device-detect'
 
-import Image from '../../../Assets/Photos/Img10.JPG'
+import Image from '../../../Assets/Photos/Img10.webp'
 
 import { useSpring, animated, config } from 'react-spring'
 

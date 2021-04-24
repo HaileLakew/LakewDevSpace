@@ -3,10 +3,10 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 
-import HDLogo from '../../../Assets/Icons/HomeDepot.png'
-import UTDallasLogo from '../../../Assets/Icons/UTDallas.png'
-import NGLogo from '../../../Assets/Icons/NorthropGrumman.png'
-import SEMLogo from '../../../Assets/Icons/SEM.png'
+import HDLogo from '../../../Assets/Icons/HomeDepot.webp'
+import UTDallasLogo from '../../../Assets/Icons/UTDallas.webp'
+import NGLogo from '../../../Assets/Icons/NorthropGrumman.webp'
+import SEMLogo from '../../../Assets/Icons/SEM.webp'
 
 export default function Timeline() {
   return (

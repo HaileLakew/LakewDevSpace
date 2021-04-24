@@ -1,8 +1,8 @@
 import React from 'react'
 
-import GitHub from '../../../Assets/Icons/GitHub.png'
-import Instagram from '../../../Assets/Icons/Instagram.png'
-import LinkedIn from '../../../Assets/Icons/LinkedIn.png'
+import GitHub from '../../../Assets/Icons/GitHub.webp'
+import Instagram from '../../../Assets/Icons/Instagram.webp'
+import LinkedIn from '../../../Assets/Icons/LinkedIn.webp'
 
 export default function Connect() {
   return (

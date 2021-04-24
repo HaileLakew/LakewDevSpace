@@ -1,9 +1,10 @@
 .connect {
   margin: auto;
+  margin-top: 10vw;
   text-align: center;
-  @media (min-width: 1025px) {
-    @include backlight(0, 50vw, 50vw, 0.75, #0fffc1, #7e0fff, 5s);
-  }
+  // @media (min-width: 1025px) {
+  //   @include backlight(0, 50vw, 50vw, 0.75, #0fffc1, #7e0fff, 5s);
+  // }
 
   &__header {
     font-size: 2rem;
