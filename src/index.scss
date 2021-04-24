@@ -22,7 +22,6 @@ body {
   background: #000000;
 }
 
-
 /// ----------------------------------------------
 .polygon {
   height: 100vh;
@@ -144,8 +143,8 @@ body {
   height: 100%;
 
   &:after {
-    -moz-box-shadow: inset 0 0 10em #666;  
-    -webkit-box-shadow: inset 0 0 10em #666;   
+    -moz-box-shadow: inset 0 0 10em #666;
+    -webkit-box-shadow: inset 0 0 10em #666;
     box-shadow: inset 0 0 10em #666;
     position: absolute;
     top: 0;
@@ -153,10 +152,9 @@ body {
     width: 100%;
     height: 100%;
     z-index: 2;
-    content: "";
-   }
+    content: '';
+  }
 }
-
 
 //-----------------------------------------
 @import './Pages/Portfolio/Styles/index.scss';

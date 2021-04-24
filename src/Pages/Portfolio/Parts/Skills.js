@@ -18,7 +18,7 @@ function ProgressBar({ amount }) {
     <Progress
       theme={{
         active: {
-          color: isMobile? '#ff6961':'#301934',
+          color: isMobile ? '#ff6961' : '#301934',
           trailColor: '#ffffff00'
         }
       }}

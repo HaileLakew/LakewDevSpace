@@ -26,30 +26,31 @@ export default function Introduction() {
             </div>
           </div>
         </div>
-        {!isMobile &&
+        {!isMobile && (
           <div className="face face2">
             <div className="introduction__body content">
-              A Javascript Enthusiast, I've put my hand into a lot of different kinds of proverbial cookie pots. My first
-              time ever programming started when I was in highschool. We coded a pretty cool Java
-              space shooter game, and since then, I've been hooked! The feeling of having no limits, except time and effort of course,
-              to do whatever we want has always been the gleam in my eye. And all of my fond coding memories is me going from.. "Can
-              we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style! I love to have fun coding, and
-              coding is a fun thing to do!
+              A Javascript Enthusiast, I've put my hand into a lot of different kinds of proverbial cookie pots. My
+              first time ever programming started when I was in highschool. We coded a pretty cool Java space shooter
+              game, and since then, I've been hooked! The feeling of having no limits, except time and effort of course,
+              to do whatever we want has always been the gleam in my eye. And all of my fond coding memories is me going
+              from.. "Can we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style! I love to have fun
+              coding, and coding is a fun thing to do!
             </div>
           </div>
-        }
+        )}
       </div>
       <div>
         <img className="introduction__profile-pic " src={Image} alt="It's me Haile" />
-        {isMobile &&
+        {isMobile && (
           <div className="introduction__body content">
             A Javascript Enthusiast, I've put my hand into a lot of different kinds of proverbial cookie pots. My first
-            time ever programming started when I was in highschool. We coded a pretty cool Java
-            space shooter game, and since then, I've been hooked! The feeling of having no limits, except time and effort of course,
-            to do whatever we want has always been the gleam in my eye. And all of my fond coding memories is me going from.. "Can
-            we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style! I love to have fun coding, and
+            time ever programming started when I was in highschool. We coded a pretty cool Java space shooter game, and
+            since then, I've been hooked! The feeling of having no limits, except time and effort of course, to do
+            whatever we want has always been the gleam in my eye. And all of my fond coding memories is me going from..
+            "Can we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style! I love to have fun coding, and
             coding is a fun thing to do!
-          </div>}
+          </div>
+        )}
       </div>
     </div>
   )
