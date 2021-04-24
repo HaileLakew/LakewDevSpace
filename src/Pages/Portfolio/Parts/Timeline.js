@@ -85,7 +85,7 @@ export default function Timeline() {
       <VerticalTimelineElement
         className="vertical-timeline-element--education yeetText"
         date="May 2014"
-        icon={<img className="timeline__logo" src={HDLogo} alt="" />}>
+        icon={<img className="timeline__logo" src={UTDallasLogo} alt="" />}>
         <h3 className="vertical-timeline-element-title">Started in Computer Science</h3>
         <h4 className="vertical-timeline-element-subtitle">University of Texas at Dallas</h4>
       </VerticalTimelineElement>
