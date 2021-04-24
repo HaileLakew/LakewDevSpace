@@ -1,6 +1,8 @@
 import React from 'react'
 
 import TextLoop from 'react-text-loop'
+import { isMobile } from 'react-device-detect'
+
 import Image from '../../../Assets/Photos/Img5.jpg'
 
 export default function Introduction() {
@@ -24,19 +26,30 @@ export default function Introduction() {
             </div>
           </div>
         </div>
-        <div className="face face2">
-          <div className="introduction__body content">
-            A Javascript Enthusiast, I've put my hand into a lot of different kinds of proverbial cookie pots. My first
-            time ever actually programming actually started when I was 14, in highschool. We coded a pretty cool Java
-            space shooter game, and since then, I've been hooked! The feeling of having no limits except time and effort
-            to do whatever we want has always been the gleam in my eye. And all of my fond memories is going from.. "Can
-            we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style. I love to have fun coding, and
-            coding is a fun thing to do!
+        {!isMobile &&
+          <div className="face face2">
+            <div className="introduction__body content">
+              A Javascript Enthusiast, I've put my hand into a lot of different kinds of proverbial cookie pots. My first
+              time ever programming started when I was in highschool. We coded a pretty cool Java
+              space shooter game, and since then, I've been hooked! The feeling of having no limits, except time and effort of course,
+              to do whatever we want has always been the gleam in my eye. And all of my fond coding memories is me going from.. "Can
+              we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style! I love to have fun coding, and
+              coding is a fun thing to do!
+            </div>
           </div>
-        </div>
+        }
       </div>
       <div>
         <img className="introduction__profile-pic " src={Image} alt="It's me Haile" />
+        {isMobile &&
+          <div className="introduction__body content">
+            A Javascript Enthusiast, I've put my hand into a lot of different kinds of proverbial cookie pots. My first
+            time ever programming started when I was in highschool. We coded a pretty cool Java
+            space shooter game, and since then, I've been hooked! The feeling of having no limits, except time and effort of course,
+            to do whatever we want has always been the gleam in my eye. And all of my fond coding memories is me going from.. "Can
+            we do that" to... "WE CAN DO THAT". Pretty much sums up my coding style! I love to have fun coding, and
+            coding is a fun thing to do!
+          </div>}
       </div>
     </div>
   )

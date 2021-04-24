@@ -22,30 +22,6 @@ body {
   background: #000000;
 }
 
-// ----------------------------------------------------------
-.tiles {
-  padding: 6vh 16vw;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  position: relative;
-}
-.tile {
-  margin: 15px;
-  cursor: pointer;
-  overflow: hidden;
-  width: 20vw;
-  height: 20vw;
-  object-fit: cover;
-  img {
-    width: 70%;
-    transition: transform 500ms ease;
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-}
 
 /// ----------------------------------------------
 .polygon {
@@ -158,12 +134,29 @@ body {
 .yeetBackground {
   @include backlight(0, 5vw, 5vw, 0.75, #0fffc1, #7e0fff, 10s);
 }
+//--------------------------
+
+.mobileBackground {
+  position: relative;
+  // bottom: 10vh;
+  right: 65vw;
+  // width: 200%;
+  height: 100%;
+
+  &:after {
+    -moz-box-shadow: inset 0 0 10em #666;  
+    -webkit-box-shadow: inset 0 0 10em #666;   
+    box-shadow: inset 0 0 10em #666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    content: "";
+   }
+}
+
 
 //-----------------------------------------
 @import './Pages/Portfolio/Styles/index.scss';
-
-//---
-.ccard {
-  transition: box-shadow 0.5s;
-  will-change: transform;
-}

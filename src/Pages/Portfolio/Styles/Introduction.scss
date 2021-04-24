@@ -1,6 +1,10 @@
 .introduction {
+  text-align: center;
+  // color: black;
+  font-weight: bold;
 
   @media (min-width: 1025px) {
+    font-weight: 100;
     margin-right: 5%;
     width: 40vw;
     margin-left: 10%;
@@ -14,8 +18,10 @@
 
   &__header {
     font-size: 2rem;
+    margin-top: 25vh;
 
     @media (min-width: 1025px) {
+      margin-top: 0;
       font-size: 4rem;
     }
   }
@@ -29,12 +35,14 @@
   }
 
   &__body {
-    font-size: 1rem;
-    padding: 10px 0px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px 10px;
     margin-top: 25%;
 
     @media (min-width: 1025px) {
       margin-top: 5%;
+      padding: 10px 0px;
       font-size: 1.4rem;
     }
   }
@@ -56,6 +64,7 @@
     }
 
     @media (min-width: 1025px) {
+      margin-top: 0%;
       width: 25vw;
       height: 25vw;
     }
@@ -64,49 +73,51 @@
 
 // -------------------------------------------
 
-.card .face {
-  height: 200px;
-  transition: 0.4s;
-}
+@media (min-width: 1025px) {
+  .card .face {
+    height: 200px;
+    transition: 0.4s;
+  }
 
-.card .face.face1 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  z-index: 1;
-  transform: translateY(100px);
-}
+  .card .face.face1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
 
-.card:hover .face.face1 {
-  transform: translateY(0);
-  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f,
-    inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
-}
+  .card:hover .face.face1 {
+    transform: translateY(0);
+    box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f,
+      inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+  }
 
-.card .face.face1 .content {
-  opacity: 0.2;
-  transition: 0.5s;
-  text-align: center;
-}
+  .card .face.face1 .content {
+    opacity: 0.2;
+    transition: 0.5s;
+    text-align: center;
+  }
 
-.card:hover .face.face1 .content {
-  opacity: 1;
-}
+  .card:hover .face.face1 .content {
+    opacity: 1;
+  }
 
-.card .face.face2 {
-  position: relative;
-  display: flex;
-  color: transparent;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  padding: 20px;
-  transform: translateY(-100px);
-}
+  .card .face.face2 {
+    position: relative;
+    display: flex;
+    color: transparent;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    transform: translateY(-100px);
+  }
 
-.card:hover .face.face2 {
-  color: white;
-  transform: translateY(0);
+  .card:hover .face.face2 {
+    color: white;
+    transform: translateY(0);
+  }
 }

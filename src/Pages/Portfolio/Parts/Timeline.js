@@ -13,7 +13,6 @@ export default function Timeline() {
     <VerticalTimeline>
       <VerticalTimelineElement
         className="vertical-timeline-element--work yeetText"
-        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
         date="Mar 2020 - Present"
         icon={<img className="timeline__logo" src={HDLogo} alt="" />}>
         <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
