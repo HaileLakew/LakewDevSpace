@@ -16,14 +16,14 @@ export default function Portfolio(props) {
   const scrollArea = useRef()
   return (
     <>
-      <Parallax ref={scrollArea} pages={isMobile? 4.75 :3.5}>
+      <Parallax ref={scrollArea} pages={isMobile ? 4.75 : 3.5}>
         <ParallaxLayer offset={0.1} speed={-1.5}>
           <Canvas concurrent shadowMap camera={{ position: [0, 0, 5], fov: 70 }}>
             <Spacer />
           </Canvas>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={isMobile? 7: 5} speed={1}>
+        <ParallaxLayer offset={isMobile ? 7 : 5} speed={1}>
           <Canvas concurrent shadowMap camera={{ position: [0, 0, 5], fov: 70 }}>
             <Spacer />
           </Canvas>
@@ -49,21 +49,19 @@ export default function Portfolio(props) {
           </ReactFloaterJs>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={isMobile? 3.2: 2.45} speed={1.3}>
+        <ParallaxLayer offset={isMobile ? 3.2 : 2.45} speed={1.3}>
           <Skill />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={isMobile? 3.7: 3.5} speed={1}>
+        <ParallaxLayer offset={isMobile ? 3.7 : 3.5} speed={1}>
           <Timeline />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={isMobile? 8.15: 5.3} speed={1}>
+        <ParallaxLayer offset={isMobile ? 8.15 : 5.3} speed={1}>
           <ReactFloaterJs>
             <Connect />
           </ReactFloaterJs>
         </ParallaxLayer>
-
-
 
         {/* <ParallaxLayer offset={5.2} speed={1}>
             <PhotoGallery />

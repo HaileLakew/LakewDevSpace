@@ -3,10 +3,10 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 
-import HDLogo from '../../../Assets/Icons/HomeDepot.png';
-import UTDallasLogo from '../../../Assets/Icons/UTDallas.png';
-import NGLogo from '../../../Assets/Icons/NorthropGrumman.png';
-import SEMLogo from '../../../Assets/Icons/SEM.png';
+import HDLogo from '../../../Assets/Icons/HomeDepot.png'
+import UTDallasLogo from '../../../Assets/Icons/UTDallas.png'
+import NGLogo from '../../../Assets/Icons/NorthropGrumman.png'
+import SEMLogo from '../../../Assets/Icons/SEM.png'
 
 export default function Timeline() {
   return (
@@ -15,8 +15,7 @@ export default function Timeline() {
         className="vertical-timeline-element--work yeetText"
         contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
         date="Mar 2020 - Present"
-        icon={<img className="timeline__logo" src={HDLogo} alt="" />}
-      >
+        icon={<img className="timeline__logo" src={HDLogo} alt="" />}>
         <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
         <h4 className="vertical-timeline-element-subtitle">Home Depot - Dallas, TX</h4>
         <ul>
@@ -34,8 +33,7 @@ export default function Timeline() {
       <VerticalTimelineElement
         className="vertical-timeline-element--work yeetText"
         date="Jan 2018 - Mar 2020"
-        icon={<img className="timeline__logo" src={HDLogo} alt="" />}
-      >
+        icon={<img className="timeline__logo" src={HDLogo} alt="" />}>
         <h3 className="vertical-timeline-element-title">Software Engineer</h3>
         <h4 className="vertical-timeline-element-subtitle ">Home Depot - Dallas, TX</h4>
         <ul>
@@ -56,16 +54,14 @@ export default function Timeline() {
       <VerticalTimelineElement
         className="vertical-timeline-element--education yeetText"
         date="May 2018"
-        icon={<img className="timeline__logo" src={UTDallasLogo} alt="" />}
-      >
+        icon={<img className="timeline__logo" src={UTDallasLogo} alt="" />}>
         <h3 className="vertical-timeline-element-title">Graduation with BS in Computer Science</h3>
         <h4 className="vertical-timeline-element-subtitle">University of Texas at Dallas</h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work yeetText"
         date="May 2017 - Aug 2017"
-        iconStyle={{ background: '#800020 ', color: '#fff' }}
-      >
+        iconStyle={{ background: '#800020 ', color: '#fff' }}>
         <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
         <h4 className="vertical-timeline-element-subtitle">Argo - Dallas, TX</h4>
         <ul>
@@ -78,8 +74,7 @@ export default function Timeline() {
         className="vertical-timeline-element--work yeetText"
         date="May 2016 - Aug 2016"
         iconStyle={{ background: 'white', color: '#fff' }}
-        icon={<img className="timeline__logo" src={NGLogo} alt="" />}
-      >
+        icon={<img className="timeline__logo" src={NGLogo} alt="" />}>
         <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
         <h4 className="vertical-timeline-element-subtitle">Northrop Gruman - Oklahoma City, OK</h4>
         <ul>
@@ -90,16 +85,14 @@ export default function Timeline() {
       <VerticalTimelineElement
         className="vertical-timeline-element--education yeetText"
         date="May 2014"
-        icon={<img className="timeline__logo" src={HDLogo} alt="" />}
-      >
+        icon={<img className="timeline__logo" src={HDLogo} alt="" />}>
         <h3 className="vertical-timeline-element-title">Started in Computer Science</h3>
         <h4 className="vertical-timeline-element-subtitle">University of Texas at Dallas</h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education yeetText"
         date="Fall 2010"
-        icon={<img className="timeline__logo" src={SEMLogo} alt="" />}
-      >
+        icon={<img className="timeline__logo" src={SEMLogo} alt="" />}>
         <h3 className="vertical-timeline-element-title">Started Coding with Java</h3>
         <h4 className="vertical-timeline-element-subtitle">School of Science and Engineering High School</h4>
         <p>Learned the basics of programming in Java in Freshman year of Highschool</p>

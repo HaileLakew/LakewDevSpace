@@ -136,20 +136,19 @@ body {
 }
 
 .yeetText {
-    animation: textColor 10s ease infinite;
+  animation: textColor 10s ease infinite;
 
-    @keyframes textColor {
-      0% {
-        color: teal;
-      }
-      50% {
-        color:  #00bebe;
-      }
-      100% {
-        color: teal;
-      }
+  @keyframes textColor {
+    0% {
+      color: teal;
     }
-  
+    50% {
+      color: #00bebe;
+    }
+    100% {
+      color: teal;
+    }
+  }
 }
 
 .blackText {

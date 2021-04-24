@@ -1,13 +1,13 @@
 .skills {
   margin-left: 7%;
 
-  @media (min-width:1025px) {
+  @media (min-width: 1025px) {
     margin: 10%;
     padding: 5% 0%;
   }
 
   &__flex {
-    @media (min-width:1025px) {
+    @media (min-width: 1025px) {
       display: flex;
     }
   }
@@ -18,7 +18,7 @@
     white-space: nowrap;
 
     &-container {
-      @media (min-width:1025px) {
+      @media (min-width: 1025px) {
         width: 50vw;
       }
     }
@@ -43,7 +43,7 @@
       transform: scale(1.1);
     }
 
-    @media (min-width:1025px) {
+    @media (min-width: 1025px) {
       display: block;
       width: 25vw;
       height: 25vw;

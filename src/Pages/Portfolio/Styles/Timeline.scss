@@ -1,13 +1,13 @@
-.timeline{
-    &__logo{
-        position: relative;
-        top: 8%;
-        left: 8%;
-        width: 85%; /* width of container */
-        height: 85%; /* height of container */
-        // height: 80%;
-        border-radius: 50%;
-        object-fit: cover;
-        transform: scale(1.2);
-    }
+.timeline {
+  &__logo {
+    position: relative;
+    top: 8%;
+    left: 8%;
+    width: 85%; /* width of container */
+    height: 85%; /* height of container */
+    // height: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: scale(1.2);
+  }
 }
